@@ -1,3 +1,4 @@
 test.
 Git tuoritorial.
 git bash.
+Git has a mutable index called stage.
