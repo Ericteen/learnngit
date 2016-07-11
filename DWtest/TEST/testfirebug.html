@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>演示JS调试</title>
+	<style type="text/css">
+	h1{
+		font-size: 50px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<h1>倒计时：<span>10</span></h1>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			var el=$("h1 span").first();
+			var i=9;
+			var interval=setInterval(function(){
+				console.trace();
+				el.html(i);
+				i--;
+				
+				if (i<0) {
+					clearInterval(interval);}
+			},1000);
+		});
+	</script>
+</body>
+</html>

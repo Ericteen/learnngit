@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>window.open</title>
+<script type="text/javascript">
+  function Wopen(){
+    var mymessage= confirm("确定在新网页中打开百度？");
+    if(mymessage==true)
+    {
+         window.open('http://www.baidu.com','_blank,_self','width=1366,height=768,menubar=yes,toolbar=yes, status=yes,scrollbars=yes') ;
+    }
+    else
+    {
+        alert("打开失败！");
+    }
+  }      
+
+</script>
+</head>
+<body>
+<form>
+    <input name="button" type="button" onclick="Wopen()" value="点击我，打开新窗口!">
+</form>
+</body>
+</html>
